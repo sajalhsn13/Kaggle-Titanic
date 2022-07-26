@@ -1,46 +1,50 @@
 params = {
     'lr': {
-        'params': {'C': 100.0, 'random_state': 57},
-        'score': 0.802
+        'params': {'C': 1.0, 'random_state': 57},
+        'score': 0.829
     },
     'svc': {
-        'params': {'C': 100.0, 'gamma': 0.001, 'random_state': 57},
-        'score': 0.744
+        'params': {'C': 1000.0, 'gamma': 0.001, 'random_state': 57},
+        'score': 0.830
     },
     'lsvc': {
         'params': {'C': 1.0, 'random_state': 57},
-        'score': 0.769
+        'score': 0.827
     },
     'gnb': {
         'params': {'var_smoothing': 1e-06},
-        'score': 0.788
+        'score': 0.757
     },
     'mnb': {
         'params': {'alpha': 0.0},
-        'score': 0.786
+        'score': 0.781
+    },
+    'knn': {
+        'params': {'n_neighbors': 4},
+        'score': 0.791
     },
     'dt': {
         'params': {'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 0.1, 'random_state': 57},
         'score': 0.775
     },
     'rf': {
-        'params': {'criterion': 'entropy', 'max_depth': 3, 'min_samples_leaf': 0.1, 'n_estimators': 50, 'random_state': 57},
-        'score': 0.792
+        'params': {'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 0.1, 'n_estimators': 250, 'random_state': 57},
+        'score': 0.787
     },
     'ada': {
-        'params': {'n_estimators': 50, 'random_state': 57},
-        'score': 0.808
+        'params': {'n_estimators': 100, 'random_state': 57},
+        'score': 0.817
     },
     'gb': {
-        'params': {'min_samples_leaf': 0.1, 'n_estimators': 50, 'random_state': 57},
-        'score': 0.823
+        'params': {'min_samples_leaf': 0.1, 'n_estimators': 250, 'random_state': 57},
+        'score': 0.836
     },
-    'sgb': {
-        'params': {'alpha': 0.01, 'penalty': 'l1', 'random_state': 57},
-        'score': 0.780
+    'sgd': {
+        'params': {'alpha': 0.001, 'penalty': 'elasticnet', 'random_state': 57},
+        'score': 0.824
     },
     'xgb': {
-        'params': {'eta': 0.1, 'gamma': 1.0, 'lambda': 10.0, 'seed': 57},
-        'score': 0.826
+        'params': {'eta': 0.6, 'gamma': 1.0, 'lambda': 10.0, 'seed': 57},
+        'score': 0.839
     }
 }
