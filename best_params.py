@@ -1,10 +1,10 @@
 params = {
     'lr': {
-        'params': {'C': 1.0, 'random_state': 57},
+        'params': {'C': 1000.0, 'random_state': 57},
         'score': 0.829
     },
     'svc': {
-        'params': {'C': 1000.0, 'gamma': 0.001, 'random_state': 57},
+        'params': {'C': 1000.0, 'gamma': 0.01, 'random_state': 57},
         'score': 0.830
     },
     'lsvc': {
@@ -16,11 +16,11 @@ params = {
         'score': 0.757
     },
     'mnb': {
-        'params': {'alpha': 0.0},
+        'params': {'alpha': 0.8},
         'score': 0.781
     },
     'knn': {
-        'params': {'n_neighbors': 4},
+        'params': {'n_neighbors': 7},
         'score': 0.791
     },
     'dt': {
@@ -28,7 +28,7 @@ params = {
         'score': 0.775
     },
     'rf': {
-        'params': {'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 0.1, 'n_estimators': 250, 'random_state': 57},
+        'params': {'criterion': 'gini', 'max_depth': 3, 'min_samples_leaf': 0.1, 'n_estimators': 200, 'random_state': 57},
         'score': 0.787
     },
     'ada': {
@@ -36,7 +36,7 @@ params = {
         'score': 0.817
     },
     'gb': {
-        'params': {'min_samples_leaf': 0.1, 'n_estimators': 250, 'random_state': 57},
+        'params': {'min_samples_leaf': 0.1, 'n_estimators': 150, 'random_state': 57},
         'score': 0.836
     },
     'sgd': {
@@ -44,7 +44,7 @@ params = {
         'score': 0.824
     },
     'xgb': {
-        'params': {'eta': 0.6, 'gamma': 1.0, 'lambda': 10.0, 'seed': 57},
+        'params': {'eta': 1.0, 'gamma': 1.0, 'lambda': 10.0, 'seed': 57},
         'score': 0.839
     }
 }

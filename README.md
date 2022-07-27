@@ -6,3 +6,4 @@ Steps:
     3. find best params for each classifiers.
     4. generate meta features.
     5. meta model validation.
+    6. final prediction.
